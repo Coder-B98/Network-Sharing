@@ -2,20 +2,18 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+<h1>On-premises File Sharing on an Active Directory Network made with Azure vitrual machines (Azure)</h1>
+This tutorial outlines the implementation of network file sharing with an on-premises Active Directory within Azure Virtual Machines.<br />
 
 
-<h2>Video Demonstration</h2>
 
-- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Active Directory Domain Services
-- PowerShell
+- File Explorer
 
 <h2>Operating Systems Used </h2>
 
@@ -24,10 +22,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Starting with an Active Directory enviorment made in Azure go to the Domain controller make folders on the C Drive that will have various share permissions.
+- Set the permissions for those folders.
+- Go onto the client and test the share permissions as a normal user and an admin.
+- Create an accountant class of users and make a user an account to test share permissions with that class.
 
 <h2>Deployment and Configuration Steps</h2>
 
