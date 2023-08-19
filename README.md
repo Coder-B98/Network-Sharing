@@ -65,7 +65,7 @@ From the Active Directory and Users page create a new organizational unit called
 <img src="https://i.imgur.com/On43O01.png"/>
 </p>
 <p>
-Use the command \\DC-1 with 'DC-1' being the hostname of the Domain Controller in the search bar of file explore to access share files. Do this on the Client virtual machine logged in as an Admin, Accoutant and Domain User to ensure you set the proper permissions for each folder. This concludes the demonstration
+Use the command \\DC-1 with 'DC-1' being the hostname of the Domain Controller in the search bar of file explore to access share files. Do this on the Client virtual machine logged in as an Admin, Accoutant and Domain User to ensure you set the proper permissions for each folder. This concludes the demonstration.
 <br />
 
 
