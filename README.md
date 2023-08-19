@@ -30,25 +30,43 @@ This tutorial outlines the implementation of network file sharing with an on-pre
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/WKcak3p.png"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+On the Domain Controller's C Drive create folders with these names: read-access, write-access, no-access and accoutant
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/oftoYuw.png"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Right click on the folder and click properties then sharing and then the first option to set share permissions according for the folder on the network, as described below: 
+  <br />
+  read-access: Domain User: read
+  <br />
+  write-access: Domain User: read/write
+  <br />
+  no-access: Domain Admin: read/write
+  <br />
+  accountant: Accountant: read/write
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/4p9YNNL.png"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+From the Active Directory and Users page create a new organizational unit called _SECURITY GROUPS and create an accountant group by right clicking inside of it and clicking new group. Give this group read write access to the account folder and set an account to be an accountant. 
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/On43O01.png"/>
+</p>
+<p>
+Use the command \\DC-1 with 'DC-1' being the hostname of the Domain Controller in the search bar of file explore to access share files. Do this on the Client virtual machine logged in as an Admin, Accoutant and Domain User to ensure you set the proper permissions for each folder. This concludes the demonstration
+<br />
+
+
+
